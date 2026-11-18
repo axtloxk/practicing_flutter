@@ -22,7 +22,9 @@ class Profile extends StatelessWidget {
     return Scaffold(
       body: ListView.builder(
         itemCount: names.length,
-        itemBuilder: (context, index) {},
+        itemBuilder: (context, index) {
+          return ListTile(title: Text(names[index]));
+        },
       ),
     );
   }
