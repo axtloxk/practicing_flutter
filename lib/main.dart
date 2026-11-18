@@ -15,10 +15,15 @@ class MyApp extends StatelessWidget {
 }
 
 class Profile extends StatelessWidget {
-  const new({super.key});
-
+  new({super.key});
+  List names = ["Marcos", "Rinos", "Niya", "Ena"];
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: ListView.builder(
+        itemCount: names.length,
+        itemBuilder: (context, index) {},
+      ),
+    );
   }
 }
